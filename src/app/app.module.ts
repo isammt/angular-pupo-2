@@ -10,11 +10,15 @@ import { SobreComponent } from './sobre/sobre.component';
 import { TabuadaComponent } from './tabuada/tabuada.component';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, RouterModule.forRoot([
-    {{ path: '', component: HomeComponent },
-    { path: 'sobre', component: SobreComponent },
-    { path: 'tabuada', component: TabuadaComponent },
-  ])],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent },
+      { path: 'sobre', component: SobreComponent },
+      { path: 'tabuada', component: TabuadaComponent },
+    ]),
+  ],
   declarations: [AppComponent, HelloComponent, TabuadaComponent],
   bootstrap: [AppComponent],
 })
